@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejer34</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+}
+    input {
+        padding: 10px;
+        font-size: 16px;
+        width: 200px;
+        margin-right: 10px;
+}
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+}
+    #tareasList {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+}
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+}
+    li.completa {
+        text-decoration: line-through;
+        color: gray;
+}
+    button.completar {
+        background-color: greenyellow;
+        color: white;
+        border: none;
+        margin-left: 10px;
+        cursor: pointer;
+}
+    button.eliminar {
+        background-color: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <h1>Lista de Tareas Pendientes</h1>
+    
+    <input type="text" id="tareaInput" placeholder="Escribe una tarea...">
+    <button onclick="agregarTarea()">Agregar tarea</button>
+    <button onclick="limpiarTareas()">Limpiar todas</button>
+
+    <ul id="tareasList"></ul>
+<script src="ejer34.js"></script>
+</body>
+</html>
